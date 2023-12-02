@@ -13,5 +13,7 @@ gauge_bin
 # Gauge - java class target dir
 target
 
-.idea/
-*.iml
+# IntelliJ IDEA user-specific setting files
+.idea/**/workspace.xml
+.idea/**/statistics.xml
+.idea/**/tasks.xml
