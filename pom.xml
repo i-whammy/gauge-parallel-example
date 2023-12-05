@@ -9,6 +9,8 @@
 
     <properties>
         <java.version>17</java.version>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
         <gauge.java.version>0.10.3</gauge.java.version>
         <gauge.maven.version>1.6.1</gauge.maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
