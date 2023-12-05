@@ -61,7 +61,7 @@ Total time taken: 10.323s
 
 ## case 3: --parallel --only behavior
 - Only specified tags will be executed after remaining specs are executed.
-  - `gauge run specs --parallel --only "parallelizable"`
+  - `gauge run --parallel specs --only "parallelizable"`
 ### example
 ```shell
 $ gauge run -p -n 2 specs --only "parallel"
