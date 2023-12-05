@@ -2,7 +2,7 @@
 Test for gauge parallel execution performance.
 ## case 1: default parallel behavior
 - when you run the following, you can run the tests in N number of parallel streams.
-  - `gauge run --parallel -n N specs`
+  - `gauge run -p(--parallel) -n N specs`
     - Note that the maximum number of streams depends on CPU core numbers of your machine/environment.
 - the specs are dynamically separated into N streams.(mode = Lazy)
 ### example
@@ -57,11 +57,11 @@ Total time taken: 10.323s
 ## case 2: eager mode behavior
 - when you run the following, you can run the tests in N number of parallel streams.
 - the specs are dynamically separated into N streams.(mode = Lazy)
-    - `gauge run --parallel --strategy=eager -n N specs`
+    - `gauge run -p --strategy=eager -n N specs`
 
-## case 3: --parallel --only behavior
+## case 3: -p --only behavior
 - Only specified tags will be executed after remaining specs are executed.
-  - `gauge run --parallel specs --only "parallelizable"`
+  - `gauge run -p specs --only "parallelizable"`
 ### example
 ```shell
 $ gauge run -p -n 2 specs --only "parallel"
